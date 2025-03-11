@@ -1,0 +1,276 @@
+/* Général */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #f5f5f5;
+    color: #333;
+}
+
+/* Header */
+header {
+    background: #2c3e50;
+    color: #ecf0f1;
+    padding: 1em 0;
+    text-align: center;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+    margin: 0;
+    padding: 0;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #ecf0f1;
+    font-weight: bold;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.menu a:hover {
+    background: #34495e;
+}
+
+/* Section commune */
+main {
+    padding: 2em;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 2rem;
+    color: #2c3e50;
+}
+
+p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 1em 0;
+    color: #555;
+}
+
+/* Bouton */
+button, .cta {
+    display: inline-block;
+    background: #2980b9;
+    color: #ffffff;
+    padding: 0.7em 1.5em;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover, .cta:hover {
+    background: #1abc9c;
+}
+
+/* Galerie */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5em;
+    margin: 4em 0;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.gallery .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, opacity 0.3s ease;
+    opacity: 1;
+    background: #ffffff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 0;
+}
+
+.gallery img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+    display: block;
+}
+
+.gallery figcaption {
+    background: #ecf0f1;
+    min-height: 40px; /* Ajuste cette valeur selon tes besoins */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px 30px;
+}
+
+/* Style du modal en plein écran */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(101, 101, 101, 0.9); /* Assombrit le fond */
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Contenu du modal en flex pour afficher image + description en ligne */
+.modal-content {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    max-width: 1200px;
+    height: auto;
+    background: rgb(255, 255, 255);
+    padding: 20px;
+    border-radius: 10px;
+    gap: 20px;
+}
+
+/* Image en grand format */
+.modal-content img {
+    max-width: 60%;
+    max-height: 80vh;
+    object-fit: contain; /* Empêche l'image de se déformer */
+    border-radius: 5px;
+}
+
+.modal-content img {
+    max-width: 60%;
+    max-height: 80vh;
+    object-fit: contain;
+    border-radius: 5px;
+    transition: transform 0.3s ease-in-out;
+    cursor: zoom-in;
+}
+
+.modal-content img.zoomed {
+    transform: scale(2); /* Zoom x2 */
+    cursor: zoom-out;
+}
+
+/* Description à droite de l'image */
+.modal-description {
+    max-width: 40%;
+    text-align: left;
+    color: rgb(0, 0, 0) !important;
+    font-size: 18px;
+    line-height: 1.5;
+    padding: 15px; /* Espace intérieur pour aérer le texte */
+    border-radius: 5px; /* Arrondi des bords */
+}
+
+
+/* Bouton de fermeture */
+.close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    color: black;
+    background: rgba(255, 255, 255, 0.7);
+    padding: 5px 10px;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.close:hover {
+    background: red;
+    color: white;
+}
+
+
+/* Tuto vidéos */
+.video-gallery {
+    margin: 2em 0;
+    text-align: center;
+}
+
+.video-gallery a {
+    display: inline-block;
+    margin: 0.5em 0;
+    padding: 0.7em 1em;
+    background: #2980b9;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.video-gallery a:hover {
+    background: #1abc9c;
+}
+
+/* Formulaire */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin: 2em auto;
+    max-width: 500px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 0.7em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+button[type="submit"] {
+    align-self: flex-end;
+}
+
+/* Footer */
+footer {
+    background: #2c3e50;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 1em 0;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .menu {
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    main {
+        padding: 1em;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    }
+
+    .gallery img {
+        height: 250px; /* Ajustement pour mobile */
+    }
+}

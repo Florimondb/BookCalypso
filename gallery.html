@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galerie - Portfolio Maquillage</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="about.html">À propos</a></li>
+                <li><a href="gallery.html">Galerie</a></li>
+                <li><a href="videos.html">Vidéos Tutos</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Galerie</h1>
+        <div class="filters">
+            <button onclick="filterGallery('all')">Tous</button>
+            <button onclick="filterGallery('naturel')">Naturel</button>
+            <button onclick="filterGallery('artistique')">Artistique</button>
+            <button onclick="filterGallery('soirée')">Soirée</button>
+        </div>
+        <div class="gallery">
+            <figure class="item naturel make-nat-face-1n">
+                <img src="image/Make nat face  1n.jpg" alt="Make Up Naturel 1 ">
+                <figcaption>Make Up Naturel face </figcaption>
+            </figure>
+            <figure class="item naturel make-nat-right-1n">
+                <img src="image/Make nat right 1n.jpg" alt="Make Up Naturel 1 ">
+                <figcaption>Make Up Naturel profil droit </figcaption>
+            </figure>
+            <figure class="item artistique make-art-face-1r">
+                <img src="image/Make art face 1r.jpeg" alt="Make Up Artistique 1">
+                <figcaption>Make Up Artistique face </figcaption>
+            </figure>
+            <figure class="item artistique make-art-right-1r">
+                <img src="image/Make art right 1r.jpeg" alt="Make Up Artistique 1">
+                <figcaption>Make Up Artistique profil droit </figcaption>
+            </figure>
+            <figure class="item artistique make-art-left-1r">
+                <img src="image/Make art left 1r.jpeg" alt="Make Up Artistique 1">
+                <figcaption>Make Up Artistique profil gauche </figcaption>
+            </figure>
+            <figure class="item soirée make-soireeR-face-1">
+                <img src="image/Make soireeR face 1.jpg" alt="Make Up Soirée 1">
+                <figcaption>Make Up Soirée face </figcaption>
+            </figure>
+            <figure class="item soirée make-soireeR-left-1">
+                <img src="image/Make soireeR left 1.jpg" alt="Make Up Soirée 1">
+                <figcaption>Make Up Soirée profil gauche </figcaption>
+            </figure>
+            <figure class="item naturel make-nat-face-2b">
+                <img src="image/Make nat face 2b.jpeg" alt="Make Up Naturel 2">
+                <figcaption>Make Up Naturel face </figcaption>
+            </figure>
+            <figure class="item naturel make-nat-right-2b">
+                <img src="image/Make nat right 2b.jpeg" alt="Make Up Naturel 2">
+                <figcaption>Make Up Naturel profil droit </figcaption>
+            </figure>
+            <figure class="item artistique make-art-face-2n">
+                <img src="image/Make art face 2n.jpeg" alt="Make Up Artistique 2">
+                <figcaption>Make Up Artistique face </figcaption>
+            </figure>
+            <figure class="item artistique make-art-right-2n">
+                <img src="image/Make art right 2n.jpeg" alt="Make Up Artistique 2">
+                <figcaption>Make Up Artistique profil droit </figcaption>
+            </figure>
+            <figure class="item artistique make-art-left-2n">
+                <img src="image/Make art left 2n.jpeg" alt="Make Up Artistique 2">
+                <figcaption>Make Up Artistique profil gauche </figcaption>
+            </figure>
+            <figure class="item naturel make-nat-face-3b">
+                <img src="image/Make nat face 3b.jpeg" alt="Make Up Naturel 3">
+                <figcaption>Make Up Naturel face </figcaption>
+            </figure>
+            <figure class="item naturel make-nat-right-3b">
+                <img src="image/Make nat right 3b.jpeg" alt="Make Up Naturel 3">
+                <figcaption>Make Up Naturel profil droit </figcaption>
+            </figure>
+            <figure class="item naturel make-nat-left-3b">
+                <img src="image/Make nat left 3b.jpeg" alt="Make Up Naturel 3">
+                <figcaption>Make Up Naturel profil gauche </figcaption>
+            </figure>
+            <figure class="item artistique make-art-face-3brose">
+                <img src="image/Make art face 3brose.jpeg" alt="Make Up Artistique 3">
+                <figcaption>Make Up Artistique face </figcaption>
+            </figure>
+            <figure class="item artistique make-art-profil-3brose">
+                <img src="image/Make art profil 3brose.jpeg" alt="Make Up Artistique 3">
+                <figcaption>Make Up Artistique profil </figcaption>
+            </figure>
+            <figure class="item artistique make-art-left-3brose">
+                <img src="image/Make art left 3brose.jpeg" alt="Make Up Artistique 3">
+                <figcaption>Make Up Artistique profil gauche </figcaption>
+            </figure>
+            <figure class="item naturel make-nat-face-4c">
+                <img src="image/Make nat face 4c.jpeg" alt="Make Up Naturel 4">
+                <figcaption>Make Up Naturel face </figcaption>
+            </figure>
+            <figure class="item naturel make-nat-right-4c">
+                <img src="image/Make nat right 4c.jpeg" alt="Make Up Naturel 4">
+                <figcaption>Make Up Naturel profil droit </figcaption>
+            </figure>
+            <figure class="item naturel make-nat-left-4c">
+                <img src="image/Make nat left 4c.jpeg" alt="Make Up Naturel 4">
+                <figcaption>Make Up Naturel profil gauche </figcaption>
+            </figure>
+            <figure class="item naturel make-nat-profil-4c">
+                <img src="image/Make nat profil 4c.jpeg" alt="Make Up Naturel 4">
+                <figcaption>Make Up Naturel profil </figcaption>
+            </figure>
+            <figure class="item artistique make-art-face-4brouge">
+                <img src="image/Make art face 4brouge.jpeg" alt="Make Up Artistique 4">
+                <figcaption>Make Up Artistique face </figcaption>
+            </figure>
+            <figure class="item artistique make-art-profil-4brouge">
+                <img src="image/Make art profil 4brouge.jpeg" alt="Make Up Artistique 4">
+                <figcaption>Make Up Artistique profil </figcaption>
+            </figure>
+            <figure class="item artistique make-art-left-4brouge">
+                <img src="image/Make art left 4brouge.jpeg" alt="Make Up Artistique 4">
+                <figcaption>Make Up Artistique profil gauche </figcaption>
+            </figure>
+        </div>
+        
+    </main>
+    <footer>
+        <p>&copy; 2025 Portfolio Maquillage</p>
+    </footer>
+</body>
+</html>
